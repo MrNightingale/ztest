@@ -1,0 +1,109 @@
+.page {
+    font-family: 'Open Sans', sans-serif;
+    color: #2a2d34;
+    margin: 0 auto;
+    background: url('../images/zeo-logo.png') repeat;
+
+    .button {
+        border-radius: 5px;
+        padding: 10px 65px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.header {
+    &__title {
+        text-align: center;
+    }
+
+    &__button--show {
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #6761a8;
+        border: 1px solid #6761a8;
+
+        &:hover {
+            box-shadow: 0 3px 0 0 #1d1a3b;
+        }
+    }
+}
+
+.popup {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #fff;
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        font-size: 0;
+    }
+
+    &__warning {
+        padding-top: 50px;
+    }
+
+    &__warning-img {
+       width: 120px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: -1px;
+        margin-bottom: 0;;
+    }
+
+    &__btn-wrapper {
+        padding: 50px 0;
+    }
+
+    &__button--cancel {
+        background-color: #fff;
+        color: #8b93a3;
+        border: 2px solid #d7deea;
+        margin-right: 20px;
+
+        &:hover {
+            box-shadow: 0 3px 0 0 #c3cada;
+        }
+    }
+
+    &__button--uninstall {
+        background-color: #ff3b30;
+        color: #fff;
+        border: 1px solid #ff3b30;
+
+        &:hover {
+            box-shadow: 0 3px 0 0 #a0251e;
+        }
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52,56,67,0.9);
+}
